@@ -3,5 +3,11 @@
 @tailwind utilities;
 
 body {
-  background-color: #000300;
+  background-color: #f8f8f8;
+}
+
+@layer base {
+  li{
+    @apply p-4
+  }
 }

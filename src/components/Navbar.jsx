@@ -1,32 +1,55 @@
-import React, { useState } from 'react';
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import React, { useState, useEffect } from 'react';
+import { AiOutlineClose, AiOutlineMenu, AiOutlinePhone } from 'react-icons/ai';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const handleNav = () => {
     setNav(!nav);
   };
 
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    if (offset > 10) {  // adjust this value based on when to change the bg color
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
-      <h1 className='w-full text-3xl font-bold text-[#00df9a]'>REACT.</h1>
-      <ul className='hidden md:flex'>
-        <li className='p-4'>Home</li>
-        <li className='p-4'>Company</li>
-        <li className='p-4'>Resources</li>
-        <li className='p-4'>About</li>
-        <li className='p-4'>Contact</li>
+    <div className={`fixed flex justify-between items-center h-20 w-full px-4 top-0 z-10 
+    ${nav ? 'bg-transparent' : (scrolled ? 'bg-[#f1e6c3]/90' : 'bg-transparent')}`}>
+      <img src={logo} alt='Logo' className='w-full m-4' style={{ maxWidth: '120px' }}/> 
+      <ul className={`hidden md:flex ${scrolled ? 'text-black' : 'text-white'}`}>
+        <li className='p-4'>生殖医学解决方案</li>
+        <li className='p-4'>合作伙伴</li>
+        <li className='p-4'>关于我们</li>
+        <li className='p-4'>智特荣誉</li>
+        <li className='p-4'>博客</li>
+        <li className='p-4'><AiOutlinePhone size={22}/></li>
       </ul>
       <div onClick={handleNav} className='block md:hidden'>
-          {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20} />}
-      </div>
-      <ul className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500' : 'ease-in-out duration-500 fixed left-[-100%]'}>
-        <h1 className='w-full text-3xl font-bold text-[#00df9a] m-4'>REACT.</h1>
-          <li className='p-4 border-b border-gray-600'>Home</li>
-          <li className='p-4 border-b border-gray-600'>Company</li>
-          <li className='p-4 border-b border-gray-600'>Resources</li>
-          <li className='p-4 border-b border-gray-600'>About</li>
+          {nav ? <AiOutlineClose size={20} color="black"/> : <AiOutlineMenu size={20} color="black"/>}
+      </div>                
+      <ul className={nav ? 'fixed left-0 top-0 w-[60%] h-full justify-center px-4 bg-gray-100/90 border-r-gray-900 ease-in-out duration-500' : 'ease-in-out duration-500 fixed left-[-100%]'}>
+          <img src={logo} alt='Logo' className='w-full m-4 py-1' style={{ maxWidth: '120px' }}/> 
+          <li className='p-4 border-b border-gray-600'>生殖医学解决方案</li>
+          <li className='p-4 border-b border-gray-600'>合作伙伴</li>
+          <li className='p-4 border-b border-gray-600'>关于我们</li>
+          <li className='p-4 border-b border-gray-600'>智特荣誉</li>
+          <li className='p-4 border-b border-gray-600'>博客r</li>
+          <li className='p-4 border-b border-gray-600'>Blog</li>
           <li className='p-4'>Contact</li>
       </ul>
     </div>
