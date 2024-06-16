@@ -3,7 +3,7 @@ import React from 'react';
 const Note = () => {
   return (
     <div className="flex items-center justify-center py-6 bg-[#dce2db]">
-      <div className="flex flex-col md:flex-row max-w-6xl p-4 items-start pb-4 text-black">
+      <div className="flex flex-col md:flex-row max-w-6xl p-4 items-start pb-4 m-4 text-black">
         <h1 className="text-4xl font-semibold mb-4 md:mb-2 md:mr-8 md:text-right w-full md:basis-1/4 self-center">
           来自我们的<br className="hidden md:block" />创始人
         </h1>

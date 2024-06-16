@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Newsletter from './components/Newsletter';
 import Note from './components/Note';
+import Sliders from './components/Sliders';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <div>
       <Navbar />
       <Hero />
+      <Sliders />
       <Note />
       <Cards />
       <Feature />

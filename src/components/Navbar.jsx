@@ -28,7 +28,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`fixed flex justify-between items-center h-20 w-full px-4 top-0 z-10 
+    <div className={`fixed flex justify-between items-center h-16 w-full px-4 top-0 z-10 
     ${nav ? 'bg-transparent' : (scrolled ? 'bg-[#f1e6c3]/90' : 'bg-transparent')}`}>
       <img src={logo} alt='Logo' className='w-full m-4' style={{ maxWidth: '120px' }}/> 
       <ul className={`hidden md:flex ${scrolled ? 'text-black' : 'text-white'}`}>
