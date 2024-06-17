@@ -5,7 +5,8 @@ import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Newsletter from './components/Newsletter';
-import Note from './components/Note';
+import Nathan from './components/Nathan';
+import Note from './components/Note'
 import Sliders from './components/Sliders';
 
 
@@ -16,6 +17,7 @@ function App() {
       <Hero />
       <Sliders />
       <Note />
+      <Nathan />
       <Cards />
       <Feature />
       <Newsletter />

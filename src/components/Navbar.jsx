@@ -28,7 +28,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`fixed flex justify-between items-center h-16 w-full px-4 top-0 z-10 
+    <div className={`fixed flex justify-between items-center h-16 w-screen px-4 top-0 z-10 
     ${nav ? 'bg-transparent' : (scrolled ? 'bg-[#f1e6c3]/90' : 'bg-transparent')}`}>
       <img src={logo} alt='Logo' className='w-full m-4' style={{ maxWidth: '120px' }}/> 
       <ul className={`hidden md:flex ${scrolled ? 'text-black' : 'text-white'}`}>
@@ -48,9 +48,8 @@ const Navbar = () => {
           <li className='p-4 border-b border-gray-600'>合作伙伴</li>
           <li className='p-4 border-b border-gray-600'>关于我们</li>
           <li className='p-4 border-b border-gray-600'>智特荣誉</li>
-          <li className='p-4 border-b border-gray-600'>博客r</li>
-          <li className='p-4 border-b border-gray-600'>Blog</li>
-          <li className='p-4'>Contact</li>
+          <li className='p-4 border-b border-gray-600'>博客</li>
+          <li className='p-4'>联系我们</li>
       </ul>
     </div>
   );

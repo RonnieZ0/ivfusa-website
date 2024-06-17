@@ -3,7 +3,7 @@ import babyHands from '../assets/babyHands.jpg';
 
 const Hero = () => {
   return (
-    <div style={{ backgroundImage: `url(${babyHands})` }} className="bg-cover bg-center relative h-screen w-full">
+    <div style={{ backgroundImage: `url(${babyHands})` }} className="bg-cover bg-center relative h-screen">
       <div className='absolute bottom-10 right-10 p-4 text-center flex flex-col justify-center'>
         <h1 className='text-6xl font-bold py-4'>
           让奇迹生辉
