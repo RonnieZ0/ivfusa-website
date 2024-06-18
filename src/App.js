@@ -8,6 +8,10 @@ import Newsletter from './components/Newsletter';
 import Nathan from './components/Nathan';
 import Note from './components/Note'
 import Sliders from './components/Sliders';
+import Process from './components/Process'
+import FAQ from './components/FAQ'
+import Partners from './components/Partners';
+import Doctors from './components/Doctors'
 
 
 function App() {
@@ -16,12 +20,18 @@ function App() {
       <Navbar />
       <Hero />
       <Sliders />
+      
       <Note />
       <Nathan />
-      <Cards />
+      <Partners />
+      <Doctors />
       <Feature />
+      <Process />
+      <Cards />
+      <FAQ />
       <Newsletter />
       <Footer />
+      
     </div>
   );
 }

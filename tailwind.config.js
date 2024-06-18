@@ -4,11 +4,18 @@ module.exports = {
     extend: {
       colors: {
         'custom-green': '#71bb02', // Custom name for your color
-        'custom-yello': '#f1e6c3',
+        'diyYellow': '#f1e6c3',
+        'diyBlack': '#42433e',
+        'diyPink': '#e8cbb3',
+        'diyBrown': '#988f7b',
+        'diyGray': '#dce2db',
+        'diyPurple': '#d5cbc2',
+
       }
     },
   },
   plugins: [
-    require('tailwind-scrollbar-hide')
+    require('tailwind-scrollbar-hide'),
+    require('daisyui')
   ],
 };
