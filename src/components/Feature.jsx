@@ -3,10 +3,10 @@ import IvfCell from '../assets/ivf_cell.png';
 
 const Analytics = () => {
   return (
-    <div className='w-full md:py-16 p4 bg-diyYellow/40'>
+    <div className='w-full md:p-16 p4 bg-diyYellow/40'>
       <div className='max-w-[1240px] mx-auto grid md:grid-cols-2'>
         
-        <div className='flex flex-col px-4 pr-8 mr-8 my-4 '>
+        <div className='flex flex-col p-2 '>
           <p className='text-custom-green font-bold'>咨询服务模式</p>
           <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2'>智特竞争力</h1>
           <p>
@@ -17,7 +17,7 @@ const Analytics = () => {
           </p>
           <button className='bg-diyYellow text-custom-green w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3'>了解更多</button>
         </div>
-        <img className='w-[500px] p-4 mx-auto my-4 rounded-3xl' src={IvfCell} alt='/' />
+        <img className='w-[500px] p-2 mx-auto rounded-3xl' src={IvfCell} alt='/' />
       </div>
     </div>
   );

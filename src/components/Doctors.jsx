@@ -6,9 +6,9 @@ const Doctors = () => {
     const data = [
         {
           id: 1,
-          drName: 'Dr. Abcde',
-          drIntro: '一二三四五六七八九十',
-          img: 'https://images.unsplash.com/photo-1478359844494-1092259d93e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fG9jZWFufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=800&q=60',
+          drName: 'Dr. R.G.',
+          drIntro: 'Dr. Guy Ringler',
+          img: 'https://ivfusa.com/uploads/201124/1-201124163159312.jpg',
         },
         {
           id: 2,
@@ -59,10 +59,10 @@ const Doctors = () => {
           
             {data.map((item) => (
             <div 
-            className="bg-cover relative h-[344px] w-[344px] m-4 inline-block hover:scale-105 ease-in-out duration-300 rounded-3xl"
+            className="bg-cover bg-center relative h-[344px] w-[344px] m-4 inline-block hover:scale-105 ease-in-out duration-300 rounded-3xl"
             style={{ backgroundImage: `url(${item.img})` }}
             alt = '/'>
-            <div className = "p-8 font-bold ">
+            <div className = "absolute bottom-2 left-2 p-2 font-bold bg-white/50 rounded-3xl">
               <h1 className='text-l '>{item.drName}</h1>
               <p className='text-xl max-w-[344px]'>{item.drIntro}</p>
             </div>
