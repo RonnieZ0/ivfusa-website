@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import babyHands from '../assets/babyHands.jpg'; 
 import ivf_cell from '../assets/ivf_cell.png';
+import logo from '../assets/logo.png'
 import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
 //add AiOutline down next to the title, if the corresponding description is displayed, change it to AiOutlineUp
 //add ease-in-out effect for the description and image
@@ -47,25 +48,29 @@ const ProductInfo = () => {
             <div className="md:text-center w-full md:basis-1/3 m-6">
             {steps.map((step) => (
                 <div key={step.id} className="m-6 pb-4 border-b-2 border-gray-300 ">
-                    <div className="text-3xl text-left font-semibold" >
-                        <h2 className="cursor-pointer mb-2 " onClick={() => toggleActiveProduct(step.id)}>
+                    <div className="text-3xl text-left font-semibold " >
+                        <div className="flex flex-col-2 justify-between cursor-pointer mb-2 " onClick={() => toggleActiveProduct(step.id)}>
                             {step.title}
-                        </h2>
-                        
+                            {activeProduct === step.id ? <AiOutlineUp size={25}/> : <AiOutlineDown size={25}/>}
+                        </div>
                     </div>
                     {activeProduct === step.id && (
                     <div className=" flex flex-col ">
                         <p className="text-sm md:text-base text-left">{step.description}</p>
                         <img src={step.image} alt={step.title} className="block md:hidden rounded-lg pt-6" />
+                        {/**I want the image logo to be displayed at default */}
                     </div>
                     )}
                 </div>
             ))}
             </div>
 
-            <div className="hidden md:w-2/3 md:flex m-6">
-            {activeProduct && (
+            <div className="hidden md:w-2/3 md:flex m-6 justify-center">
+            
+            {activeProduct ? (
                 <img src={steps.find(step => step.id === activeProduct).image} alt="Active Step" className="rounded-3xl shadow-lg" />
+            ) : (
+                <img src={logo} alt="Default Logo" className="rounded-3xl" />
             )}
             </div>
         </div>
