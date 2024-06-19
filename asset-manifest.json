@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/ivfusa_website/static/css/main.a95187fb.css",
+    "main.js": "/ivfusa_website/static/js/main.f1ed9d13.js",
+    "static/media/ivf_cell.png": "/ivfusa_website/static/media/ivf_cell.4035c17e6d76cdcf2f32.png",
+    "static/media/babyHands.jpg": "/ivfusa_website/static/media/babyHands.6726af7f6a1a5b58fb10.jpg",
+    "static/media/clinic_CFP.jpg": "/ivfusa_website/static/media/clinic_CFP.5907ed81bed321c528ff.jpg",
+    "static/media/nathan.png": "/ivfusa_website/static/media/nathan.940f7ad03f0144e4183e.png",
+    "static/media/clinic_NewEngland2.jpg": "/ivfusa_website/static/media/clinic_NewEngland2.34df8f0d7b26339c9049.jpg",
+    "static/media/single.png": "/ivfusa_website/static/media/single.20196aa3e7e7fa48f8f7.png",
+    "static/media/double.png": "/ivfusa_website/static/media/double.8be045e6bb88be63d414.png",
+    "static/media/triple.png": "/ivfusa_website/static/media/triple.4eb8f19f4b4647321484.png",
+    "index.html": "/ivfusa_website/index.html",
+    "main.a95187fb.css.map": "/ivfusa_website/static/css/main.a95187fb.css.map",
+    "main.f1ed9d13.js.map": "/ivfusa_website/static/js/main.f1ed9d13.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a95187fb.css",
+    "static/js/main.f1ed9d13.js"
+  ]
+}
