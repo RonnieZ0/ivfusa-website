@@ -18,7 +18,7 @@ import Blog from './components/Blog';
 
 function App() {
   return (
-    <div>
+    <div className='text-black'>
       <Navbar />
       <Hero />
       

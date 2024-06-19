@@ -36,14 +36,14 @@ const Nathan = () => {
       <div className ="bg-white/60 w-full flex flex-col md:flex-row max-w-70 m-12 items-center self-center rounded-3xl">
         <div className ="py-8 px-6 mx-auto max-w-screen-xl sm:py-8 lg:px-6">
           <div className ="mx-auto max-w-screen-sm text-center">
-            <h2 className ="mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white">
+            <h2 className ="mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-900">
               张欣博士生殖医学科普直播
             </h2>
-            <p className ="mb-4 font-light text-gray-500 dark:text-gray-400 md:text-lg">
+            <p className ="mb-4 font-light text-gray-500 md:text-lg">
               每周日晚9点微信直播，一对一咨询
             </p>
             {/* Open the modal using document.getElementById('ID').showModal() method */}
-            <button className="btn bg-custom-green rounded-full px-6" onClick={()=>document.getElementById('my_modal_2').showModal()}>观看渠道</button>
+            <button className="btn bg-custom-green rounded-full px-6 text-black" onClick={()=>document.getElementById('my_modal_2').showModal()}>观看渠道</button>
             <dialog id="my_modal_2" className="modal w-full">
               <div className="modal-box">
                 <h3 className="font-bold text-lg">Hello!</h3>

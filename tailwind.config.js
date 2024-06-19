@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: 'selector',
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
@@ -10,6 +11,7 @@ module.exports = {
         'diyBrown': '#988f7b',
         'diyGray': '#dce2db',
         'diyPurple': '#d5cbc2',
+        
 
       }
     },
