@@ -8,7 +8,7 @@ const Newsletter = () => {
           <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2'>
             了解更多生殖辅助相关内容?
           </h1>
-          <p>填写您的邮箱加入我们的会员，随时了解最新内容</p>
+          <p>填写您的邮箱加入我们的通讯名单，随时了解最新内容</p>
         </div>
         <div className='my-4'>
           <div className='flex flex-col sm:flex-row items-center justify-between w-full'>

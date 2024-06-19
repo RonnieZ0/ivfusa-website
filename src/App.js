@@ -12,6 +12,8 @@ import Process from './components/Process'
 import FAQ from './components/FAQ'
 import Partners from './components/Partners';
 import Doctors from './components/Doctors'
+import Timeline from './components/Timeline'
+import Blog from './components/Blog';
 
 
 function App() {
@@ -19,8 +21,8 @@ function App() {
     <div>
       <Navbar />
       <Hero />
-      <Sliders />
       
+      <Sliders />
       <Note />
       <Nathan />
       <Partners />
@@ -30,7 +32,10 @@ function App() {
       <Cards />
       <FAQ />
       <Newsletter />
+      <Timeline />
+      <Blog />
       <Footer />
+      
       
     </div>
   );
