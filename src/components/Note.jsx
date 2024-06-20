@@ -1,4 +1,5 @@
 import React from 'react';
+import notebg from '../assets/note_bg.jpg'
 
 const Note = () => {
   return (
@@ -6,7 +7,7 @@ const Note = () => {
       {/* Background with filter */}
       <div className="absolute w-full h-full bg-cover bg-center bg-fixed" 
            style={{ 
-             backgroundImage: `url('https://images.unsplash.com/photo-1523951778169-4cb35545bfa2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTgzfHxmYW1pbHl8ZW58MHx8MHx8fDA=')`,
+             backgroundImage: `url('${notebg}')`,
              filter: 'brightness(0.4)',
            }}
       />

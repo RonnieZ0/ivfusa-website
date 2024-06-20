@@ -41,7 +41,7 @@ const ProductInfo = () => {
   };
 
   return (
-    <div className='flex flex-col h-screen justify-center md:p-16 p-4 my-auto bg-custom-green/10'>
+    <div className='flex flex-col lg:h-screen justify-center md:p-16 p-4 pt-16 my-auto bg-custom-green/10'>
         <h1 className='w-full max-w-80 text-4xl font-bold md:ml-14 self-center text-left'> 流程演示 </h1>
         
         <div className="w-full flex flex-col md:flex-row max-w-70 m-12 mb-14 items-center self-center rounded-3xl bg-gray-300/30">

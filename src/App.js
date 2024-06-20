@@ -14,6 +14,7 @@ import Partners from './components/Partners';
 import Doctors from './components/Doctors'
 import Timeline from './components/Timeline'
 import Blog from './components/Blog';
+import Map from './components/Map';
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
     <div className='text-black'>
       <Navbar />
       <Hero />
-      
+      <Map />
       <Sliders />
       <Note />
       <Nathan />
